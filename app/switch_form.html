@@ -1,0 +1,33 @@
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>Formulario de Configuración de Switch</title>
+</head>
+<body>
+<center><h1>Formulario de Configuración de Switch</h1></center>
+<center><form action="submit_switch.php" method="post">
+    <label for="banner">Banner:</label>
+    <input type="text" id="banner" name="banner">
+    <br><br>
+    <label for="password">Contraseña encriptada de acceso a modo privilegiado:</label>
+    <input type="password" id="password" name="password">
+    <br><br>
+    <label for="password">Contraseña de acceso via telnet:</label>
+    <input type="password" id="password2" name="password">
+    <br><br>
+    <label for="password">Contraseña de acceso desde la consola via RS232:</label>
+    <input type="password" id="password3" name="password">
+    <br><br>
+    <label for="hostname">Nombre de host:</label>
+    <input type="text" id="hostname" name="hostname">
+    <br><br>
+    <label for="ip_vlan_1">IP VLAN 1:</label>
+    <input type="text" id="ip_vlan_1" name="ip_vlan_1">
+    <br><br>
+    <label for="hora">Hora:</label>
+    <input type="time" id="hora" name="hora">
+    <br><br>
+    <input type="submit" value="Enviar">
+  </form></center>
+</body>
+</html>
