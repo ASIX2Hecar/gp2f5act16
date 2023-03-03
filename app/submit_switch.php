@@ -26,8 +26,21 @@ if (isset($_POST['banner']) && isset($_POST['password']) && isset($_POST['hostna
 
   echo "interface vlan 1\n<br><br>";
 
-  echo "ip address " . $ip_vlan_1 . "\n<br><br>";
+  echo "ip address " . $ip_vlan_1 . " 255.255.255.0\n<br><br>";
+
+  echo "interface vlan 2";
+  echo "ip address " . $ip_vlan_2 . " 255.255.255.0\n<br><br>";
+
+  echo "interface vlan 3";
+  echo "ip address " . $ip_vlan_3 . " 255.255.255.0\n<br><br>";
 
   echo "clock set " . $hora . "\n<br>";
+
+  echo "switchport mode access<br>";
+  echo "switchport access vlan 2<br>";
+  echo "interface range FastEthernet0/2 - 20<br>";
+  echo "switchport mode access<br>";
+  echo "switchport access vlan 3<br>";
+  echo "interface range FastEthernet0/21 - 24<br>";
 }
 ?>
